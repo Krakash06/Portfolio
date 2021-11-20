@@ -26,7 +26,7 @@ export default function Profile() {
                                         <Offcanvas.Header closeButton>
                                             <Offcanvas.Title id="offcanvasNavbarLabel">
                                                 <div className="menubar-img">
-                                                    <img src=".././akash.png" alt="" />
+                                                    <img src=".././akash.png" alt="profile" />
                                                 </div>
                                             </Offcanvas.Title>
                                         </Offcanvas.Header>
@@ -91,7 +91,7 @@ export default function Profile() {
                         </div>
                         <div className="profile-picture">
                             <div className="profile-picture-background">
-                                <img src=".././akash.png" alt="" />
+                                <img src=".././akash.png" alt="profile" />
                             </div>
                         </div>
                     </div>
