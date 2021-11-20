@@ -4,7 +4,7 @@ import { FcGraduationCap } from "react-icons/fc";
 
 export default function Resume() {
     return (
-        <div className='mainDiv'>
+        <div className='mainDiv' id="resume">
             <h2 className="pageHeading">Resume</h2>
             {/* <p className="pageSubHeading">My formal Bio Details</p> */}
             <div className='educationQual'>
@@ -22,6 +22,7 @@ export default function Resume() {
                                     <img src=".././images/csscolor.png" alt="" />
                                     <p>CSS</p>
                                 </div>
+
                                 <div className="skillCard">
                                     <img src=".././images/javascriptcolor.png" alt="" />
                                     <p>JAVASCRIPT</p>

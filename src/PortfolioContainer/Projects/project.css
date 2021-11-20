@@ -29,6 +29,17 @@
     text-decoration:none; 
     cursor:pointer;
 }
+.projectDetail a:hover{
+    width: 100px;
+    padding: 3px 3px;
+    margin: 4px 4px;
+    background-color: #111146;
+    color: #fff;
+    border-radius: 7px;
+    text-decoration:none; 
+    cursor:pointer;
+}
+
 .langDiv{
     text-align: center;
 

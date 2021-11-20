@@ -1,23 +1,24 @@
-import React, {useRef, useState} from 'react'
+import React, { useRef, useState } from 'react'
 import './contact.css'
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import emailjs from 'emailjs-com';
 
 export default function Contact() {
-    const formRef= useRef()
-    const [done,setDone]=useState(false)
-    const handleSubmit=(e)=>{
+    const formRef = useRef()
+    const [done, setDone] = useState(false)
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         emailjs.sendForm('service_49mg0vj', 'template_4veg9d8', formRef.current, 'user_fb0quMNXGa3aiqcu3968d')
-        .then((result) => {
-            console.log(result.text);
-            setDone(true)
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+                setDone(true)
+            }, (error) => {
+                console.log(error.text);
+            });
     }
     return (
-        <div className='c'>
+        <div className='c' id="contact">
             <div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
@@ -35,6 +36,16 @@ export default function Contact() {
                             <img className="c-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjA0e6bQtfAkkmSc-tLkPcS43ZuhgXen9ZA&usqp=CAU" alt="" />
                             Parsa Saran, Bihar
                         </div>
+                        <div className="c-info-item socialmedia">
+                        <h1 className="c-icon"></h1>
+                            <div className="colzs">
+                                <div className="colz-icons">
+                                    <a href="http://www.linkedin.com/in/akash-kumar06"><FaLinkedin className='social-media-icon' /></a>
+                                    <a href="https://github.com/Krakash06"><FaGithubSquare className='social-media-icon' /></a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div className="c-right">

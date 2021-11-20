@@ -35,7 +35,7 @@
 .aboutBtnDiv{
     margin-top:5% ;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .aboutBtnDiv .hireMeBtn{
     color: #ffffff;
@@ -50,6 +50,29 @@
     border: none;
     border-radius: 25px;
     padding: 5px 15px;
+}
+.aboutBtnDiv button:hover{
+    color: #ffffff;
+    background-color: #111146;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.colzs .colz-icons{
+    text-align: center;
+    align-items: center;
+}
+.colz-icons .social-media-icon{
+    color: #111146;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin: 0 !important;
+}
+.colz-icons ,.social-media-icon:hover{
+    transform: scale(1.5);
+
 }
 @media screen and (max-width:910px) {
     .containerDiv{

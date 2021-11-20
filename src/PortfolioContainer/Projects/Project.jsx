@@ -2,7 +2,7 @@ import "./project.css"
 export const Project = () => {
     return (
         <>
-            <div className="projectMain">
+            <div className="projectMain" id="project">
                 <h1 className="pageHeading">Projects</h1>
                 <div className="projectCardDiv">
                     <div className="projectDetail">
